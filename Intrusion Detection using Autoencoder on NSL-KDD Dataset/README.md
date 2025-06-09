@@ -97,12 +97,6 @@ intrusion-detection-autoencoder/
 
 ---
 
-## 📄 License
-
-[MIT License](LICENSE)
-
----
-
 ## 🚮 Disclaimer
 
 This repository is for educational and experimental use. Results may vary depending on preprocessing and randomness in initialization.
