@@ -1,0 +1,63 @@
+# Default configuration for Enhanced Autoencoder Anomaly Detection
+
+# Data parameters
+data:
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+  contamination: 0.1
+
+# Model architecture parameters
+model:
+  encoding_dims: [128, 64, 32, 64, 128]
+  latent_dim: 32
+  dropout_rate: 0.2
+  l2_regularization: 0.001
+  use_batch_norm: true
+
+# Training parameters
+training:
+  learning_rate: 0.001
+  batch_size: 256
+  epochs: 100
+  patience: 10
+  validation_split: 0.1
+
+# Evaluation parameters
+evaluation:
+  threshold_method: 'statistical'  # 'statistical', 'percentile', 'optimal'
+  threshold_multiplier: 2.5
+  percentile_threshold: 95
+
+# Comparison methods
+comparison:
+  isolation_forest:
+    contamination: 0.1
+    n_estimators: 100
+    random_state: 42
+  
+  one_class_svm:
+    nu: 0.1
+    kernel: 'rbf'
+    gamma: 'scale'
+
+# Visualization parameters
+visualization:
+  figure_size: [12, 8]
+  save_plots: true
+  plot_format: 'png'
+  dpi: 300
+
+# Logging parameters
+logging:
+  level: 'INFO'
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  save_logs: true
+  log_file: 'anomaly_detection.log'
+
+# Output parameters
+output:
+  save_model: true
+  model_path: 'models/best_autoencoder.h5'
+  results_path: 'results/'
+  generate_report: true

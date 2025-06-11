@@ -1,0 +1,23 @@
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+tensorflow>=2.8.0
+
+# Data loading
+datasets>=2.0.0
+
+# Optional dependencies for advanced features
+plotly>=5.0.0
+shap>=0.40.0
+optuna>=3.0.0
+
+# Development dependencies
+pytest>=6.0.0
+black>=22.0.0
+flake8>=4.0.0
+jupyter>=1.0.0
