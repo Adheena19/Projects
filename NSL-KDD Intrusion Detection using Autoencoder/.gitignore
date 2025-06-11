@@ -1,0 +1,39 @@
+
+---
+
+## 📄 `.gitignore`
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+*.env
+
+# Data & Cache
+*.h5
+*.hdf5
+*.csv
+*.arff
+.DS_Store
+*.log
+*.gz
+*.zip
+*.tar
+
+# VSCode
+.vscode/
